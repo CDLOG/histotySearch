@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  historyDemo
+//
+//  Created by 陈乐杰 on 2018/8/9.
+//  Copyright © 2018年 nst. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define  Font_System_Regular(_size) [UIFont systemFontOfSize:_size]
+#define  screenWidth [UIScreen mainScreen].bounds.size.width
+#define  screenHeight [UIScreen mainScreen].bounds.size.height
+#import "NSString+add.h"
+#import "UIView+CLExtension.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
