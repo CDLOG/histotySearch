@@ -88,7 +88,7 @@
     self.clearBtn .titleLabel.font = Font_System_Regular(16);
     [self.clearBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     
     [self.searchBtn addTarget:self action:@selector(search) forControlEvents:UIControlEventTouchUpInside];
@@ -105,6 +105,7 @@
         self.searchLable.text = _inputUITextField.text;
         [self addHistoryModelWithText:_inputUITextField.text andType:HistorySearchSuplly];
         [self saveHistorySearch];
+        [self reloadSearch:nil];
     }
     
 }
